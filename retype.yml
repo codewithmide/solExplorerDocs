@@ -9,5 +9,9 @@ links:
   link: https://solexplorer-v1.vercel.app/
 - text: GitHub
   link: https://github.com/codewithmide/SolExplorer
+- text: Twitter
+  link: https://x.com/sol_explorer_
+- text: Telegram Community
+  link: https://t.me/+N1-Gq6L5WStmYWM8
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; SolExplorer Copyright {{ year }}. All rights reserved."
