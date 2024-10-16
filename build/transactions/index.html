@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.782389483742">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.782389429721">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>5. Developer Tools Tab</title>
-    <meta name="title" content="5. Developer Tools Tab">
-    <meta name="description" content="The Developer Tools tab is designed to assist developers who are working on the Solana blockchain. It offers a simple and practical tool for acquiring ">
+    <title>2. Transactions Tab</title>
+    <meta name="title" content="2. Transactions Tab">
+    <meta name="description" content="The Transaction Overview tab allows users to dive into the specific details of any transaction on the Solana blockchain.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://solexplorer-v1.vercel.app/developers-tool/">
+    <link rel="canonical" href="https://solexplorer-v1.vercel.app/transactions/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://solexplorer-v1.vercel.app/developers-tool/">
-    <meta property="og:title" content="5. Developer Tools Tab">
-    <meta property="og:description" content="The Developer Tools tab is designed to assist developers who are working on the Solana blockchain. It offers a simple and practical tool for acquiring ">
+    <meta property="og:url" content="https://solexplorer-v1.vercel.app/transactions/">
+    <meta property="og:title" content="2. Transactions Tab">
+    <meta property="og:description" content="The Transaction Overview tab allows users to dive into the specific details of any transaction on the Solana blockchain.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://solexplorer-v1.vercel.app/developers-tool/">
-    <meta property="twitter:title" content="5. Developer Tools Tab">
-    <meta property="twitter:description" content="The Developer Tools tab is designed to assist developers who are working on the Solana blockchain. It offers a simple and practical tool for acquiring ">
+    <meta property="twitter:url" content="https://solexplorer-v1.vercel.app/transactions/">
+    <meta property="twitter:title" content="2. Transactions Tab">
+    <meta property="twitter:description" content="The Transaction Overview tab allows users to dive into the specific details of any transaction on the Solana blockchain.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.782389483742" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.782389429721" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.782389483742" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.782389429721" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.782389483742" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.782389429721" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -169,24 +169,79 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="5-developer-tools-tab" class="break-words">
+<doc-anchor-target id="2-transactions-tab" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-developer-tools-tab">#</doc-anchor-trigger>
-        <span>5. Developer Tools Tab</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-transactions-tab">#</doc-anchor-trigger>
+        <span>2. Transactions Tab</span>
     </h1>
 </doc-anchor-target>
-<p>The <strong>Developer Tools</strong> tab is designed to assist developers who are working on the Solana blockchain. It offers a simple and practical tool for acquiring <strong>Devnet SOL</strong> for testing purposes.</p>
-<doc-anchor-target id="key-features">
+<p>The <strong>Transaction Overview</strong> tab allows users to dive into the specific details of any transaction on the Solana blockchain. It provides a clear breakdown of key transaction data, including timestamps, fees, and account inputs.</p>
+<doc-anchor-target id="key-elements-of-the-transactions-tab">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#key-features">#</doc-anchor-trigger>
-        <span>Key Features</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#key-elements-of-the-transactions-tab">#</doc-anchor-trigger>
+        <span>Key Elements of the Transactions Tab</span>
     </h2>
 </doc-anchor-target>
 <ul>
-<li><strong>Request Devnet SOL</strong><br />
-Developers can easily request SOL on the Devnet by entering their wallet address in the provided input field. This is essential for testing transactions, smart contracts, and other blockchain interactions without using real SOL from the mainnet.</li>
+<li><p><strong>Transaction Signature</strong><br />
+At the top of the tab, the transaction signature (hash) is displayed, which serves as the unique identifier for the transaction on the Solana blockchain. Users can click the copy icon to quickly copy the signature.</p>
+</li>
+<li><p><strong>Transaction Status</strong><br />
+This section shows the confirmation status of the transaction.</p>
+</li>
+<li><p><strong>Transaction Timestamp</strong><br />
+The timestamp shows the exact date and time when the transaction was confirmed.</p>
+</li>
+<li><p><strong>Transaction Fee (SOL)</strong><br />
+This field shows the fee paid for the transaction. Solana&#x27;s network fees are known for being low, making it affordable for users to interact with the blockchain.</p>
+</li>
+<li><p><strong>Post Balance (SOL)</strong><br />
+The post-balance shows the remaining balance of the account after the transaction has been processed.</p>
+</li>
 </ul>
-<p>This feature provides a seamless experience for developers, allowing them to quickly obtain SOL tokens on the <strong>Devnet</strong> for their testing and development needs.</p>
+<doc-anchor-target id="additional-transaction-data">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#additional-transaction-data">#</doc-anchor-trigger>
+        <span>Additional Transaction Data</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p><strong>Slot Number</strong>:<br />
+This shows the slot number in which the transaction was confirmed. The slot number helps users understand where the transaction fits in the timeline of Solana blocks.</p>
+</li>
+<li><p><strong>Number of Signatures</strong>:<br />
+This refers to the number of required signatures for the transaction to be valid.</p>
+</li>
+<li><p><strong>Compute Units Consumed</strong>:<br />
+The amount of computational resources used during the transaction.</p>
+</li>
+<li><p><strong>Number of Instructions</strong>:<br />
+This field shows how many instructions were processed as part of the transaction.</p>
+</li>
+<li><p><strong>Recent Blockhash</strong>:<br />
+The blockhash from a recent block that ensures the transaction is processed in a timely manner.</p>
+</li>
+</ul>
+<doc-anchor-target id="account-inputs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#account-inputs">#</doc-anchor-trigger>
+        <span>Account Inputs</span>
+    </h2>
+</doc-anchor-target>
+<p>Below the main transaction details, users can see the <strong>Account Inputs</strong> involved in the transaction. Each input includes:</p>
+<ul>
+<li><p><strong>Address</strong>:<br />
+The address of the account involved in the transaction.</p>
+</li>
+<li><p><strong>Is Writable</strong>:<br />
+Indicates whether the account is writable during the transaction.</p>
+</li>
+<li><p><strong>Is Signer</strong>:<br />
+Specifies whether the account was one of the signers of the transaction.</p>
+</li>
+</ul>
+<hr>
+<p>This layout provides a clean, structured overview of each transaction&#x27;s key details, making it easy for users to review and understand the components of their blockchain interactions.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -196,20 +251,20 @@ Developers can easily request SOL on the Devnet by entering their wallet address
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../tokens/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../accounts/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">4. Tokens Tab</span>
+                                                <span class="block mt-1">1. Accounts Tab</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../toly/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../blocks/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">6. Ask Toly Tab</span>
+                                                <span class="block mt-1">3. Blocks Tab</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -253,6 +308,6 @@ Developers can easily request SOL on the Devnet by entering their wallet address
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "5. Developer Tools Tab", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "2. Transactions Tab", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
